@@ -1,12 +1,17 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from "./components/HelloWorld.vue";
+<script>
+import Counter from "./components/Counter.vue";
+export default {
+  name: "App",
+  components: {
+    Counter,
+  },
+};
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello World" />
+  <h2>Prueba</h2>
+  <Counter></Counter>
 </template>
 
 <style>
