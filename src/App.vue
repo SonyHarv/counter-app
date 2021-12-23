@@ -10,7 +10,8 @@ export default {
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <h2>Prueba</h2>
+  <h1>Counter</h1>
+  <Counter title="Entraron"></Counter>
   <Counter></Counter>
 </template>
 
