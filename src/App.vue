@@ -12,7 +12,7 @@ export default {
   <img alt="Vue logo" src="./assets/logo.png" />
   <h1>Counter</h1>
   <Counter title="Entraron"></Counter>
-  <Counter></Counter>
+  <Counter :start="1"></Counter>
 </template>
 
 <style>
