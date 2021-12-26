@@ -14,10 +14,19 @@
 export default {
   name: "Counter",
 
-  props: ["title"],
+  props: {
+    title: String,
+    start: {
+      type: Number,
+      default: 15,
+      validator(value) {
+        return value >= 0;
+      },
+    },
+  },
   data() {
     return {
-      counter: 5,
+      counter: this.start,
     };
   },
   methods: {
